@@ -1,9 +1,14 @@
 ﻿
+
+
 @{
     ViewData["Title"] = "Create";
 }
 
 <h2>Create</h2>
-<h3>@ViewData["Name"]</h3>
-<h3>@ViewData["Price"]</h3>
+<form action="Save" method="post">
+    Name <input value="@ViewData["Name"]"/>
+    price <input value="@ViewData["Price"]"/>
+    <button>Submit</button>
+</form>
 
